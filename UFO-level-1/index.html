@@ -11,6 +11,18 @@
 </head>
 
 <body>
+    <style>
+        .panel {
+            padding: 1rem;
+            width: 20vh;
+        }
+        
+        #filter-btn {
+            border-radius: 1rem;
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+    </style>
     <div class="wrapper">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -32,6 +44,22 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">Filter Search</div>
                             <div class="panel-body">
+                                <div class="selDataset">
+                                    <label for="cars">Choose a Country</label>
+                                    <select id="selDataset">
+                                        <option value="none" selected disabled hidden> 
+                                            Select an Option 
+                                         </option>
+                                         <option value="datetime">Date/time</option>
+                                         <option value="city">City</option>
+                                         <option value="state">State</option>
+                                         <option value="country">Country</option>
+                                         <option value="shape">Shape</option>
+                                       
+                                    </select>
+
+                                </div>
+
                                 <form>
                                     <div class="form-group">
                                         <ul class="list-group" id="filters">
@@ -41,7 +69,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                                    <button id="filter-btn" type="button" style="border: 1px solid white;" class="btn btn-default">Filter Table</button>
                                 </form>
                             </div>
                         </div>
