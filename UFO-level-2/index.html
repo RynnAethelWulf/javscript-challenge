@@ -25,22 +25,25 @@
         <section class="main">
             <div class="form-content">
                 <section class="search">
-                    <select style="font-size: 2.5rem;" class="custom-select">
-                        <option value="none">Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                    <select id="#selDataset" style="font-size: 2.5rem;color:#75135dba" class="custom-select">
+                        <option value="none"  selected disabled hidden>Open this select menu</option>
+                                        <option value="datetime">Date/time</option>
+                                         <option value="city">City</option>
+                                         <option value="state">State</option>
+                                         <option value="country">Country</option>
+                                         <option value="shape">Shape</option>
+                                      
                     </select>
 
                     <form class="form-inline">
-                        <input class="form-control mr-sm-2" style="font-size: 2.8rem;" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submitt</button>
+                        <input id="datetime" class="form-control mr-sm-2" style="font-size: 2.8rem;color:#75135dba" type="search" placeholder="Search UFO Sightings" aria-label="Search">
+                        <button id="filter-btn" style="font-size: 2rem;" class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
                     </form>
 
                 </section>
                 <section class="table">
-                    <div class="col-md-11 mt-5">
-                        <div id="table-area" class="">
+                    <div class="col-md-12 mt-5">
+                        <div id="table-area" class="table-responsive" style="height:50vh">
                             <table id="ufo-table" class="table table-striped table-hover">
                                 <!-- <caption>List of users</caption> -->
                                 <thead class="table-dark">
@@ -55,6 +58,19 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <tr>
+                                        <td>asd</td>
+                                        <td>asd</td>
+                                        <td>asd</td>
+                                        <td>asd</td>
+                                        <td>asd</td>
+                                        <td>asd</td>
+                                        <td>asd</td>
+
+
+                                    </tr>
+
+
                                 </tbody>
                             </table>
                         </div>
@@ -66,7 +82,11 @@
     </main>
 
     <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="/UFO-level-2/js/app.js"></script>
+    <script src="/UFO-level-2/js/data.js"></script>
+
 </body>
 
 </html>
