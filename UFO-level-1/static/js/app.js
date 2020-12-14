@@ -9,18 +9,21 @@ let button = d3.select("#filter-btn");
 // Output display
 let tbody = d3.select("tbody");
 
+// action
 button.on("click", filterdata);
 form.on("submit", filterdata);
 
 function filterdata() {
+    // so that it doesnt refresh the paGE
     d3.event.preventDefault();
 
 
     let inputData = d3.select("#datetime").property("value");
     // let inputData = datetime.value();
-
-    let filteredData = tableData.filter(ele => ele["datetime"] === inputData);
-    console.log(filteredData)
+    // console.log(inputData)
+    let filteredData = tableData.filter(ele => ele.datetime === inputData);
+    console.log(filteredData);
+    // tO CLEAR ANY OUTPUT
     tbody.html("");
     filteredData.forEach((ele) => {
         let table_row = tbody.append("tr");
